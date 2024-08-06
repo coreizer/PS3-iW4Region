@@ -27,7 +27,9 @@
 
 ## 👀 Featured
 
-- patch.ff region
+- patch.ff Region
+- Drag & Drop
+- Verify File
 
 ## 🖼️ Screenshot
 
