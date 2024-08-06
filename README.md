@@ -35,8 +35,8 @@
 
 ## 🌏 Stay In Touch
 
-- [Website (coreizer.dev)](https://www.coreizer.dev)
-- [Twitter](https://www.twitter.com/coreizer)
+- [coreizer.dev](https://www.coreizer.dev)
+- [@coreizer](https://www.x.com/coreizer)
 
 ## 👷 Author
 
