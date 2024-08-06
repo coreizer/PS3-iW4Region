@@ -62,7 +62,7 @@
 			this.buttonOpen.Location = new Point(237, 141);
 			this.buttonOpen.Name = "buttonOpen";
 			this.buttonOpen.Size = new Size(75, 23);
-			this.buttonOpen.TabIndex = 0;
+			this.buttonOpen.TabIndex = 1;
 			this.buttonOpen.Text = "Open...";
 			this.buttonOpen.UseVisualStyleBackColor = true;
 			this.buttonOpen.Click += this.buttonOpen_Click;
@@ -73,16 +73,16 @@
 			this.textBoxPath.Name = "textBoxPath";
 			this.textBoxPath.ReadOnly = true;
 			this.textBoxPath.Size = new Size(201, 23);
-			this.textBoxPath.TabIndex = 1;
+			this.textBoxPath.TabIndex = 0;
 			// 
 			// labelRegion
 			// 
 			this.labelRegion.AutoSize = true;
 			this.labelRegion.Location = new Point(30, 183);
 			this.labelRegion.Name = "labelRegion";
-			this.labelRegion.Size = new Size(87, 15);
+			this.labelRegion.Size = new Size(93, 15);
 			this.labelRegion.TabIndex = 12;
-			this.labelRegion.Text = "Select Region : ";
+			this.labelRegion.Text = "Select a region : ";
 			// 
 			// comboBoxRegion
 			// 
@@ -93,7 +93,7 @@
 			this.comboBoxRegion.Location = new Point(30, 201);
 			this.comboBoxRegion.Name = "comboBoxRegion";
 			this.comboBoxRegion.Size = new Size(282, 23);
-			this.comboBoxRegion.TabIndex = 11;
+			this.comboBoxRegion.TabIndex = 2;
 			this.comboBoxRegion.SelectedIndexChanged += this.comboBoxRegion_SelectedIndexChanged;
 			// 
 			// buttonPatcher
@@ -102,7 +102,7 @@
 			this.buttonPatcher.Location = new Point(30, 246);
 			this.buttonPatcher.Name = "buttonPatcher";
 			this.buttonPatcher.Size = new Size(282, 41);
-			this.buttonPatcher.TabIndex = 10;
+			this.buttonPatcher.TabIndex = 3;
 			this.buttonPatcher.Text = "Patcher";
 			this.buttonPatcher.UseVisualStyleBackColor = true;
 			this.buttonPatcher.Click += this.buttonPatcher_Click;
@@ -152,12 +152,16 @@
 			this.Controls.Add(this.buttonPatcher);
 			this.FormBorderStyle = FormBorderStyle.FixedSingle;
 			this.Icon = (Icon)resources.GetObject("$this.Icon");
+			this.KeyPreview = true;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "frmMain";
 			this.StartPosition = FormStartPosition.CenterScreen;
-			this.Text = "PS3 - iW4 Region";
+			this.Text = "PS3 - iW4 Region v0.2";
 			this.FormClosing += this.frmMain_FormClosing;
+			this.DragDrop += this.frmMain_DragDrop;
+			this.DragEnter += this.frmMain_DragEnter;
+			this.KeyDown += this.frmMain_KeyDown;
 			this.statusStrip1.ResumeLayout(false);
 			this.statusStrip1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)this.pictureBox1).EndInit();

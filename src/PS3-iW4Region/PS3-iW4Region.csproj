@@ -8,7 +8,19 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <StartupObject>PS3_iW4Region.Program</StartupObject>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <Copyright>coreizer</Copyright>
+    <Description>PS3 Mw2 patch region</Description>
+    <PackageProjectUrl>https://github.com/coreizer/PS3-iW4Region</PackageProjectUrl>
+    <PackageIcon>icon-32x32.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/coreizer/PS3-iW4Region</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
@@ -27,6 +39,17 @@
 
   <ItemGroup>
     <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\img\icon-32x32.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
